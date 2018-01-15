@@ -89,8 +89,7 @@ EventUtil.addHandler(label[0],'click',drop)
 
 })()
 
- document.onreadystatechange=function(){
-        if(document.redayState=='complete'){
-            $('loading').fadeOut();
-        }
-    }
+ window.onload=function(){$('.loading').fadeOut();}
+    
+   
+  

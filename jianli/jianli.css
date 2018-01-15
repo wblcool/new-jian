@@ -36,8 +36,8 @@ body{
 .intro-icon,.intro-text{width:1000px;margin:0 auto;}  
 .intro-icon .link{display:inline-block;width:80px;height:80px;margin-right:80px;-webkit-transition:all 0.6s ease-in 0s;-o-transition:all 0.6s ease-in 0s;transition:all 0.6s ease-in 0s;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 .intro-icon .link:hover{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
-.nav #ipt1:checked~.scroll #panel1 #tou{-webkit-animation:move1 1.5s ease-out 0s backwards;animation:move1 1.5s ease-out 0s backwards;}
-.nav #ipt1:checked~.scroll #panel1  .icn  a{-webkit-animation:move2 1.5s ease-out 0s backwards;animation:move2 1.5s ease-out 0s backwards;}
+.nav #ipt1:checked~.scroll #panel1 #tou{-webkit-animation:move1 1.5s ease-out 1s backwards;animation:move1 1.5s ease-out 1s backwards;}
+.nav #ipt1:checked~.scroll #panel1  .icn  a{-webkit-animation:move2 1.5s ease-out 1s backwards;animation:move2 1.5s ease-out 1s backwards;}
 /*中间图片部分*/
 @keyframes move1{
  0% {
@@ -402,24 +402,25 @@ body{
   95%{-webkit-transform:translate(0,0);transform:translate(0,0)}
   100%{-webkit-transform:translate(0,0);transform:translate(0,0);}
   }
-   .loading{
+.loading{
             width: 100%;
             height: 100%;
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 1000;
+            z-index: 100;
             background: #fff;
         }
-        .loading .pic{
+.pic{
             width: 700px;
             height: 400px;
              
-            background: url(loading.gif);
+            background:url(loading.gif);
             position: absolute;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             margin: auto;
+            z-index:200;
         }
